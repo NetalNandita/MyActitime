@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="script.VerifyLoginPage">
+        <methods>
+          <include name="testVerifyLoginPage"/>
+        </methods>
+      </class> <!-- script.VerifyLoginPage -->
+      <class name="script.verifyLoginLogout">
+        <methods>
+          <include name="testVerifyLoginLogout"/>
+        </methods>
+      </class> <!-- script.verifyLoginLogout -->
+      <class name="script.verifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+        </methods>
+      </class> <!-- script.verifyVersion -->
+      <class name="script.verifyInvalidLogin">
+        <methods>
+          <include name="precondition"/>
+          <include name="testVerifyInvalidLogin"/>
+        </methods>
+      </class> <!-- script.verifyInvalidLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
